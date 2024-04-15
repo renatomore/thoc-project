@@ -1,0 +1,37 @@
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #032700 !important;
+  padding-top: 37px;
+  padding-bottom: 37px;
+}
+.logo {
+  margin-left: 5%;
+}
+.divider {
+  width: 0px;
+  height: 24px;
+  border: 1px solid #032700;
+  margin-left: 35px;
+}
+.nav-link {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 35px;
+}
+.search-icon {
+  cursor: pointer;
+  margin-left: 35px;
+}
+.cart-icon {
+  cursor: pointer;
+  margin-left: 35px;
+  margin-right: 52px;
+}
+.avatar {
+  margin-top: -6px;
+  margin-right: 5%;
+}

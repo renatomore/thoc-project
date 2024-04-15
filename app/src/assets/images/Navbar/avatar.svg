@@ -1,0 +1,15 @@
+<svg width="57" height="54" viewBox="0 0 57 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g clip-path="url(#clip0_1272_2019)">
+        <rect x="0.210083" width="56" height="54" rx="27" fill="#FAFAFA" />
+        <rect x="4.21008" y="33" width="48" height="39" rx="19.5" fill="#969696" />
+        <circle cx="28.2101" cy="18" r="12" fill="#969696" />
+    </g>
+    <rect x="0.710083" y="0.5" width="55" height="53" rx="26.5" stroke="#032700"
+        stroke-opacity="0.5" />
+    <defs>
+        <clipPath id="clip0_1272_2019">
+            <rect x="0.210083" width="56" height="54" rx="27" fill="white" />
+        </clipPath>
+    </defs>
+</svg>
+    
