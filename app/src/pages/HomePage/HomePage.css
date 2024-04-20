@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.banner {
+.banner-container {
   background: url("../../assets/images/Homepage/banner.png") no-repeat center /
     cover black;
   width: 100%;
@@ -75,5 +75,63 @@
 
 .medium-hover-card {
   width: 49.5%;
-  height: 100%;  
+  height: 100%;
+}
+
+.community-container {
+  width: 100%;
+  position: relative;
+  background-color: black;
+  padding: 20px 78px 60px 78px;
+  overflow: hidden;
+  margin-bottom: 175px;
+}
+
+.community-container-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 20%;
+  z-index: 0;
+}
+
+.community-content {
+  position: relative;
+  z-index: 2;
+}
+
+.community-heading {
+  margin-top: 22px;
+  width: 100%;
+  height: 51px;
+  padding-top: 8px;
+  padding-left: 5%;
+}
+
+.community-buttons {
+  width: 100%;
+  padding-left: 7%;
+  margin-top: 36px;
+}
+
+.community-cards {
+  padding-top: 8px;
+  width: 100%;
+}
+
+.community-row {
+  margin-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  margin-left:6%;
+  width: 88%;
+  height: 237px;
+}
+
+.community-card {
+  width: 24%;
+  margin-right: 16px;
 }

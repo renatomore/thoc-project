@@ -92,6 +92,17 @@ const Button = styled(ShopNowBannerButton)<{ small?: boolean }>`
   z-index: 1;
 `;
 
+export const HomeCommunityCards = styled.div<{ $backgroundImage: string }>`
+  background: url(${(props) => props.$backgroundImage}) no-repeat center / cover black;
+  border-radius: 4px;
+  margin: 8px;
+  height: 100%;
+  width: 100%;
+  &:hover {
+    box-shadow: 0px 0px 20px 0px #74a795;
+  }
+`;
+
 export const ShopNowCard = ({
   backgroundImage,
   hoverBackgroundImage,

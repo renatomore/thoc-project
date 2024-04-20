@@ -3,6 +3,7 @@ export {
   MiniButton,
   ShopNowBannerButton,
   LearnMoreButton,
+  CommunityHomeButton,
 } from "./buttons";
 export {
   BannerText,
@@ -15,4 +16,4 @@ export {
 export { Link } from "./links";
 export { Icon, SocialIcon, RatingStar } from "./icons";
 export { Input } from "./forms";
-export { ShopNowCard, HoverCard } from "./cards";
+export { HomeCommunityCards, ShopNowCard, HoverCard } from "./cards";

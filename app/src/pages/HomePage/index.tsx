@@ -5,6 +5,9 @@ import {
   Text,
   ShopNowCard,
   HoverCard,
+  Heading,
+  CommunityHomeButton,
+  HomeCommunityCards,
 } from "../../../styled-system/components";
 import "./HomePage.css";
 
@@ -88,15 +91,60 @@ const HomePage = () => {
     },
   ];
 
+  const communityCards = [
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/1.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/2.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/3.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/4.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/5.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/6.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/7.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/8.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/9.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/10.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/11.png",
+    },
+    {
+      image: "src/assets/images/Homepage/Cards/CommunityCards/12.png",
+    },
+  ];
+
   const mediumCardsRows = [];
   for (let i = 0; i < mediumCardsData.length; i += 2) {
     const row = mediumCardsData.slice(i, i + 2);
     mediumCardsRows.push(row);
   }
 
+  const communityCardsRows = [];
+  for (let i = 0; i < communityCards.length; i += 4) {
+    const row = communityCards.slice(i, i + 4);
+    communityCardsRows.push(row);
+  }
+
   return (
     <div className="home-container">
-      <div className="banner">
+      <div className="banner-container">
         <div className="banner-content">
           <BannerText style={{ margin: "8px" }}>
             Discover the ultimate DIY keyboard experience
@@ -161,6 +209,43 @@ const HomePage = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="community-container">
+        <div className="community-content">
+          <div className="community-heading">
+            <Heading color="#FAFAFA" size="L">
+              COMMUNITY
+            </Heading>
+          </div>
+          <div className="community-buttons">
+            <CommunityHomeButton>HOT NOW</CommunityHomeButton>
+            <CommunityHomeButton style={{ marginLeft: "16px" }}>
+              NEW ACTIVITY
+            </CommunityHomeButton>
+            <CommunityHomeButton style={{ marginLeft: "16px" }}>
+              LIKED
+            </CommunityHomeButton>
+            <CommunityHomeButton style={{ marginLeft: "16px" }}>
+              FAVORITES
+            </CommunityHomeButton>
+          </div>
+          <div className="community-cards">
+            {communityCardsRows.map((row, index) => (
+              <div className="community-row" key={index}>
+                {row.map((cardData, cardIndex) => (
+                  <div className="community-card" key={cardIndex}>
+                    <HomeCommunityCards $backgroundImage={cardData.image} />
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+        <img
+          className="community-container-background"
+          src="src/assets/images/Homepage/Comunity.jpeg"
+        />
       </div>
     </div>
   );

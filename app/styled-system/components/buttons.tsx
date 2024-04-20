@@ -48,9 +48,14 @@ export const ShopNowBannerButton = styled.button`
   }
 `;
 
+export const CommunityHomeButton = styled(ShopNowBannerButton)`
+  padding: 8px !important;
+  font-weight: 400;
+`;
+
 export const LearnMoreButton = styled.button`
   ${sharedButtonStyles}
   border-color: #FAFAFA;
-  color: #FAFAFA;
-  background: #ADC3B2;
+  color: #fafafa;
+  background: #adc3b2;
 `;
