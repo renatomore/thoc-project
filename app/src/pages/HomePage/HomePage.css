@@ -5,20 +5,75 @@
 }
 
 .banner {
-  background-image: url("../../assets/images/Homepage/banner.png");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: black;
+  background: url("../../assets/images/Homepage/banner.png") no-repeat center /
+    cover black;
   width: 100%;
   height: 678px;
 }
 
 .banner-content {
-  display: flex;
-  flex-direction: column;
-  margin-top: 153px;
-  margin-left: 153px;
+  margin: 153px 0 0 153px;
   width: 525px;
   height: 344px;
+}
+
+.home-cards-container {
+  width: 85%;
+}
+
+.medium-cards-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 6px 0 22px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  width: 100%;
+}
+
+.medium-card {
+  width: 49.4%;
+  height: 351px;
+}
+
+.large-card-container {
+  width: 100%;
+  height: 528px;
+  margin: 22px 0 18px;
+}
+
+.small-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 366px;
+  margin-bottom: 20px;
+}
+
+.small-card {
+  width: 24%;
+  height: 100%;
+}
+
+.large-hover-card {
+  height: 736px;
+  width: 100%;
+}
+
+.medium-hover-card-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 480px;
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.medium-hover-card {
+  width: 49.5%;
+  height: 100%;  
 }

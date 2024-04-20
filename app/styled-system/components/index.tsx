@@ -1,4 +1,9 @@
-export { MainButton, MiniButton, ShopNowBannerButton, LearnMoreButton } from "./buttons";
+export {
+  MainButton,
+  MiniButton,
+  ShopNowBannerButton,
+  LearnMoreButton,
+} from "./buttons";
 export {
   BannerText,
   DisplayLarge,
@@ -10,3 +15,4 @@ export {
 export { Link } from "./links";
 export { Icon, SocialIcon, RatingStar } from "./icons";
 export { Input } from "./forms";
+export { ShopNowCard, HoverCard } from "./cards";
